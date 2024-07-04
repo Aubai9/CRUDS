@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sign in</title>
+  <link rel="stylesheet" href="../css/fontawesome-free-6.2.0-web/css/all.min.css" />
+  <link rel="stylesheet" href="../SignIn/signin.css" />
+</head>
+
+<body>
+  <div class="container">
+    <form>
+      <div class="head">
+        <h1>Login</h1>
+      </div>
+      <div class="body">
+        <div class="email">
+          <i class="far fa-envelope"></i>
+          <input type="email" placeholder="Enter your email" required id="email" />
+        </div>
+        <div class="password">
+          <i class="fa fa-lock"></i>
+          <input type="password" placeholder="Enter your password" required id="password" />
+          <i class="fa fa-eye" id="eye" style="display: none"></i>
+          <i class="fa fa-eye-slash" id="eye-slash"></i>
+        </div>
+        <div class="feat">
+          <div class="rem"><input type="checkbox" />Remember me</div>
+          <a href="#">Forogot Password?</a>
+        </div>
+        <div class="foot">
+          <button id="signIn">Sign in</button>
+          <p>Not a member <a href="../SignUp/signup.html" target="_blank">Sign Up</a></p>
+        </div>
+      </div>
+    </form>
+  </div>
+  <script src="signin.js"></script>
+</body>
+
+</html>

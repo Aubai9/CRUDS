@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="../css/fontawesome-free-6.2.0-web/css/all.min.css">
+    <link rel="stylesheet" href="../SignUp/signup.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <form>
+            <div class="head">
+                <h1>Registration</h1>
+            </div>
+            <div class="body">
+                <div class="name">
+                    <i class="fa fa-user"></i>
+                    <input type="text" placeholder="Enter your name" id="name" required>
+                </div>
+                <div class="email">
+                    <i class="far fa-envelope"></i>
+                    <input type="email" placeholder="Enter your email" required id="email" />
+                </div>
+                <div class="password">
+                    <i class="fa fa-lock"></i>
+                    <input type="password" placeholder="Enter your password" required id="password" />
+                    <i class="fa fa-eye" id="eye" style="display: none"></i>
+                    <i class="fa fa-eye-slash" id="eye-slash"></i>
+                </div>
+                <div class="conFpassword">
+                    <i class="fa fa-lock"></i>
+                    <input type="password" placeholder="Confirm your password" required id="conFpassword" />
+                </div>
+                <div class="accept">
+                    <input type="checkbox" id="accept">I accept all terms & conditions
+                </div>
+                <div class="foot">
+                    <button id="register">Register Now</button>
+                    <p>Already have an account ? <a href="../SignIn/signin.html" target="_blank">Sign in</a></p>
+                </div>
+            </div>
+        </form>
+    </div>
+    <script src="signup.js"></script>
+</body>
+
+</html>

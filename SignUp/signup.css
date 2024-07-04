@@ -1,0 +1,233 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+body {
+  height: 100vh;
+  overflow-y: hidden;
+  background-color: #0C1844;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 35%;
+  height: fit-content;
+  padding-bottom: 20px;
+  background-color: white;
+  box-shadow: 0 0 5px 0 #FFF5E1;
+  border-radius: 6px;
+}
+.container form {
+  width: 100%;
+  height: 100%;
+}
+.container form .head {
+  width: 100%;
+  margin-bottom: 30px;
+  padding-left: 15px;
+  padding-top: 15px;
+}
+.container form .head h1 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.container form .head h1::first-letter {
+  border-bottom: 2px solid #C80036;
+}
+/* start body */
+.container form .body {
+  height: 300px;
+  margin-bottom: 30px;
+  padding-left: 15px;
+  padding-top: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+.container form .body .name {
+  width: 95%;
+  height: 30px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-bottom: 2px solid gray;
+}
+.container form .body .name input {
+  width: 95%;
+  height: 30px;
+  outline: none;
+  border: none;
+}
+.container form .body .name i {
+  padding-top: 0;
+  padding-right: 10px;
+  transition: 0.4s;
+  font-weight: bold;
+}
+.container form .body .name input:focus {
+  outline: none;
+  border: none;
+}
+.container form .body .name:hover i {
+  color: #C80036;
+}
+/* Start email */
+.container form .body .email {
+  width: 95%;
+  height: 30px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-bottom: 2px solid gray;
+}
+.container form .body .email input {
+  width: 95%;
+  height: 30px;
+  border: none;
+  outline: none;
+}
+.container form .body .email i {
+  padding-top: 0;
+  padding-right: 10px;
+  transition: 0.4s;
+  font-weight: bold;
+}
+.container form .body .email :focus {
+  outline: none;
+  border: none;
+}
+.container form .body .email:hover i {
+  color: #C80036;
+}
+.container form .body #email:valid {
+  border-bottom: 2px solid #03ff03;
+}
+/* Start password */
+
+.container form .body .password {
+  width: 95%;
+  height: 30px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-bottom: 2px solid gray;
+}
+.container form .body .password input {
+  width: 95%;
+  height: 30px;
+  border: none;
+  outline: none;
+}
+.container form .body .password input:focus {
+  border: none;
+  outline: none;
+}
+.container form .body .password i {
+  padding-right: 10px;
+  transition: 0.4s;
+  font-weight: bold;
+}
+.container form .body .password:hover i {
+  color: #C80036;
+}
+.container form .body #eye,
+#eye-slash {
+  cursor: pointer;
+}
+/* Start Cofirm password */
+
+.container form .body .conFpassword {
+  width: 95%;
+  height: 30px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-bottom: 2px solid gray;
+}
+.container form .body .conFpassword input {
+  width: 95%;
+  height: 30px;
+  border: none;
+  outline: none;
+}
+.container form .body .conFpassword input:focus {
+  border: none;
+  outline: none;
+}
+.container form .body .conFpassword i {
+  padding-right: 10px;
+  transition: 0.4s;
+  font-weight: bold;
+}
+.container form .body .conFpassword:hover i {
+  color: #C80036;
+}
+.container form .body .accept {
+  width: fit-content;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-weight: 700;
+}
+.container form .body .accept input {
+  margin-right: 10px;
+}
+/* Start Foot */
+.foot {
+  width: 95%;
+  height: 50px;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.foot button {
+  width: 100%;
+  background-color: #C80036;
+  padding: 15px 0;
+  border: none;
+  border-radius: 12px;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  margin-bottom: 30px;
+  transition: 0.4s;
+}
+.foot button:hover {
+  background-color: #860024;
+}
+.foot p {
+  font-weight: 700;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.foot a {
+  text-decoration: none;
+  color: #C80036;
+  transition: 0.4s;
+}
+.foot a:hover {
+  color: #C80036;
+}
+
+@media (max-width: 915px) {
+  .container {
+    width: 50%;
+    height: fit-content;
+    padding-top: 20px;
+    padding-bottom: 25px;
+  }
+}
+@media (max-width: 550px) {
+  .container {
+    width: 70%;
+  }
+}
+@media (max-width: 399px) {
+  .container {
+    width: 90%;
+  }
+}
